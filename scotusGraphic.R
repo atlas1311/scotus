@@ -52,10 +52,12 @@ scotusPlot <- data.frame(president = justices1$Appointed.By, judge = justices1$J
 scotusModern <- scotusPlot[scotusPlot$StartDate >= "1933-01-01", ]
 
 ggplot(scotusModern) +
-        geom_segment(aes(x = StartDate, xend = EndDate, y = judge, yend = judge, colour = president, order = desc(EndDate)), size = 3) +
+        geom_segment(aes(x = StartDate, xend = EndDate, y = judge, yend = judge, colour = president, order = EndDate), size = 3) +
         facet_grid(president ~ ., scale = "free_y", space = "free_x") +
         xlab("Year") + ylab("Justice") #+
-#        scale_x_continuous(breaks = 1933:2015)
+        #scale_x_continuous(breaks = 1933:2015)
+
+
 
 
 ### landmark dataframe build ###
