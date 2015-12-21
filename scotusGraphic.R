@@ -3,6 +3,7 @@ library(xml2)
 library(rvest)
 library(stringr)
 library(ggplot2)
+library(reshape2)
 
 ### data frame build ###
 scotusURL <- "https://en.wikipedia.org/wiki/List_of_Justices_of_the_Supreme_Court_of_the_United_States"
