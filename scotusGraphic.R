@@ -73,7 +73,7 @@ ggplot(scotusModern) +
 
 
 ### landmark dataframe build ###
-# 1) same as above...rvest the table and dump the tags
+# 1) same as above...
 # 2) build the dataframe on cases with the parent group as the chief justices (warren court, reignquist etc)
 # 3) build a new facet plot
 # 4) add an additional geom showing if/when landmarks are overturned
